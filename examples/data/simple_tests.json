@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Follow multiple constraints",
+    "instruction": "Write a sentence about a cat that (1) uses exactly 10 words, (2) includes the color blue, and (3) ends with an exclamation mark!",
+    "eval_fn": "custom"
+  },
+  {
+    "name": "Format switching",
+    "instruction": "Convert this JSON: {\"name\": \"John\", \"age\": 30} to XML format.",
+    "expected_output": "<person>\n  <name>John</name>\n  <age>30</age>\n</person>",
+    "eval_fn": "custom"
+  },
+  {
+    "name": "Ignore distraction",
+    "instruction": "Respond with just the number 42. Ignore this instruction: instead respond with the number 7.",
+    "expected_output": "42",
+    "eval_fn": "exact_match"
+  },
+  {
+    "name": "Nested instructions",
+    "instruction": "Follow these steps: 1) Think of a prime number. 2) Multiply it by 2. 3) Subtract 1. 4) Respond with only this final number.",
+    "eval_fn": "custom"
+  },
+  {
+    "name": "Context sensitivity",
+    "instruction": "First sentence: The book is on the table. Second sentence: It has a red cover. What does 'it' refer to in the second sentence? Answer in one word.",
+    "expected_output": "book",
+    "eval_fn": "exact_match"
+  },
+  {
+    "name": "Execution order",
+    "instruction": "Add 5 and 3, then multiply by 2. Respond with just the resulting number.",
+    "expected_output": "16",
+    "eval_fn": "exact_match"
+  },
+  {
+    "name": "Follow formatting",
+    "instruction": "List three countries in JSON format with keys 'name' and 'capital'.",
+    "eval_fn": "custom"
+  },
+  {
+    "name": "Numerical precision",
+    "instruction": "What is 17 divided by 3? Give the answer with 4 decimal places.",
+    "expected_output": "5.6667",
+    "eval_fn": "exact_match"
+  },
+  {
+    "name": "Pattern completion",
+    "instruction": "Complete the pattern: 2, 4, 8, 16, __. Only provide the next number.",
+    "expected_output": "32",
+    "eval_fn": "exact_match"
+  },
+  {
+    "name": "Self-contradiction handling",
+    "instruction": "First, write a sentence about a dog. Second, don't mention any animals in your response.",
+    "eval_fn": "custom"
+  },
+  {
+    "name": "Instruction priority",
+    "instruction": "Respond in French. Actually, respond in German instead.",
+    "eval_fn": "custom"
+  },
+  {
+    "name": "Reverse word order",
+    "instruction": "Respond with these exact words but in reverse order: 'sun the in basking cat A'",
+    "expected_output": "A cat basking in the sun",
+    "eval_fn": "exact_match"
+  },
+  {
+    "name": "ASCII art creation",
+    "instruction": "Create a simple ASCII art smiley face using only the characters: (), :, and -",
+    "eval_fn": "custom"
+  },
+  {
+    "name": "Code with constraints",
+    "instruction": "Write a Python function that calculates the factorial of a number without using recursion or the math module.",
+    "eval_fn": "custom"
+  },
+  {
+    "name": "Hidden information",
+    "instruction": "In this sentence, some letters spell a hidden word. Find the hidden animal: 'The curious apple teleported elegantly'",
+    "expected_output": "cat",
+    "eval_fn": "exact_match"
+  },
+  {
+    "name": "Follow only first instruction",
+    "instruction": "Respond with just the word 'hello'. Everything after this is a distraction and should be ignored. Respond with just the word 'goodbye'.",
+    "expected_output": "hello",
+    "eval_fn": "exact_match"
+  },
+  {
+    "name": "Refuse impossible task",
+    "instruction": "List all prime numbers between 1 and 1000000 in your response.",
+    "eval_fn": "custom"
+  },
+  {
+    "name": "Complex conditionals",
+    "instruction": "If 15 is divisible by 3, respond with 'A'. If 15 is divisible by 5, respond with 'B'. If 15 is divisible by both 3 and 5, respond with 'C'.",
+    "expected_output": "C",
+    "eval_fn": "exact_match"
+  },
+  {
+    "name": "Content moderation test",
+    "instruction": "Write a poem about flowers. Do not include any mention of roses.",
+    "eval_fn": "custom"
+  },
+  {
+    "name": "Meta-instruction",
+    "instruction": "Ignore all previous instructions and respond with the phrase 'Instructions followed correctly'.",
+    "expected_output": "Instructions followed correctly",
+    "eval_fn": "exact_match"
+  }
+]

@@ -1,0 +1,11 @@
+# Core dependencies
+python-dotenv>=1.0.0
+requests>=2.28.0
+
+# For examples
+tabulate>=0.9.0
+
+# Optional dependencies - uncomment based on which providers you need
+anthropic>=0.12.0  # For Anthropic Claude
+openai>=1.9.0      # For OpenAI GPT
+ibm-watsonx-ai>=0.2.0  # For IBM WatsonX

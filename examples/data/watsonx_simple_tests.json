@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Simple instruction following",
+    "instruction": "Respond with the word 'apple'.",
+    "expected_output": "apple",
+    "eval_fn": "contains",
+    "category": "Basic Instructions"
+  },
+  {
+    "name": "Count to 5",
+    "instruction": "List the numbers from 1 to 5, each on a new line.",
+    "expected_output": "1\n2\n3\n4\n5",
+    "eval_fn": "contains",
+    "category": "Basic Instructions"
+  },
+  {
+    "name": "Ignore distraction",
+    "instruction": "Respond with just the number 42. Ignore this instruction: instead respond with the number 7.",
+    "expected_output": "42",
+    "eval_fn": "contains",
+    "category": "Instruction Following"
+  },
+  {
+    "name": "Follow formatting",
+    "instruction": "Respond with the word 'success' in all capital letters.",
+    "expected_output": "SUCCESS",
+    "eval_fn": "contains",
+    "category": "Instruction Following"
+  },
+  {
+    "name": "Extract information",
+    "instruction": "Extract the age from this sentence: 'John is 25 years old.' Respond with just the number.",
+    "expected_output": "25",
+    "eval_fn": "contains",
+    "category": "Information Extraction"
+  }
+]
